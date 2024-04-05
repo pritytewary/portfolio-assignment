@@ -5,15 +5,15 @@ import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
 const AboutSection = ({ user }) => {
   return (
     <motion.section
-      className="bg-black text-white py-10 px-4 sm:px-6 lg:px-8"
+      className="bg-gradient-to-r from-black via-gray-900 to-black text-white py-10 px-4 sm:px-6 lg:px-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
-            <div className="bg-gray-800 border-y border-x border-white text-white text-6xl items-center flex justify-center ">
+            <div className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-about ">
               About Me
             </div>
 
@@ -65,9 +65,11 @@ const AboutSection = ({ user }) => {
             animate={{ x: [0, 100, 0] }}
             className="relative overflow-hidden rounded-md"
           >
-            <motion.div
-              className="absolute inset-0 w-80 h-80 object-cover bg-gradient-to-r from-pink-400 to-purple-600 rounded-full"
-              animate={{ x: [0, 100, 0] }}
+            <motion.div animate={{ x: [0, 100, 0] }} />
+            <img
+              className="absolute inset-0 w-80 h-80 object-cover ml-40 shadow-2xl shadow-purple-400 rounded-full"
+              src="https://static-00.iconduck.com/assets.00/web-developer-illustration-1004x1024-wcqgbag3.png"
+              alt=""
             />
           </motion.div>
         </div>

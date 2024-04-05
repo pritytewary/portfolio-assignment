@@ -24,47 +24,50 @@ const Navbar = () => {
         duration: 0.3,
       }}
     >
-      <nav className="bg-gradient-to-r from-black to-gray-700 shadow-md text-white">
+      <nav className="bg-gradient-to-r from-black to-gray-700 shadow-md text-white font-nav  text-xl ">
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex-shrink-0">
-              <a href="#" className="text-white text-3xl font-bold"></a>
+              <a href="#" className="text-white  font-bold font-logo text-2xl">
+                {" "}
+                Jhon
+              </a>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center space-x-4">
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   About
                 </a>
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   Services
                 </a>
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   Skills
                 </a>
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   Projects
                 </a>
                 <a
                   href="#"
-                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-100 hover:bg-gray-800 hover:text-white px-3 py-2 rounded-md  font-medium"
                 >
                   Contact
                 </a>

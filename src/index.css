@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Rye&family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+NSW+ACT+Foundation:wght@400..700&family=Imbue:opsz,wght@10..100,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -13,7 +13,7 @@ const Hero = ({ user }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
             <motion.h1
-              className="text-4xl sm:text-5xl font-bold mb-4"
+              className="text-4xl sm:text-5xl font-bold mb-4 font-hero"
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
@@ -21,12 +21,12 @@ const Hero = ({ user }) => {
               {user.about.name}
             </motion.h1>
             <motion.h2
-              className="text-2xl sm:text-3xl font-serif font-bold mb-4"
+              className="text-2xl sm:text-3xl  font-bold mb-4 font-abc"
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
             >
-              I am a {user.about.title}
+              ------------- I am a {user.about.title}
             </motion.h2>
             <motion.p
               className="text-lg mb-4"

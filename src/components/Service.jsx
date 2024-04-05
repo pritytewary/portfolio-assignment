@@ -7,7 +7,7 @@ const ServiceSection = ({ services }) => {
   }
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-gray-800">
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-gray-800 ">
       <div className="max-w-7xl mx-auto">
         <h1 className="sm:text-5xl text-6xl font-bold text-white pb-5 border-2 border-white bg-gradient-to-r from-gray-800 to-black cursor-pointer mb-8 text-center">
           Our Services
