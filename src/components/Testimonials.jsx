@@ -28,7 +28,7 @@ const TestimonialsSection = ({ testimonials }) => {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gray-900 bg-opacity-90 rounded-lg p-8 text-center">
+              <div className="bg-gray-900 bg-opacity-90 rounded-lg p-8 text-center shadow-xl shadow-purple-200">
                 <img
                   src={testimonials?.[index]?.image.url}
                   alt={testimonials?.[index]?.name}

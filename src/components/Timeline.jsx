@@ -26,10 +26,10 @@ const TimelineSection = ({ timeline }) => {
   };
 
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black">
+    <section className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-red-300 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-12"
+          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-12"
           initial={{ y: -20 }}
           animate={{ y: [0, -10, 0] }}
           transition={{
@@ -41,7 +41,7 @@ const TimelineSection = ({ timeline }) => {
           Resume
         </motion.div>
 
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-4">
           <button
             className={`mr-4 text-5xl font-semibold text-white border border-white px-40 py-2 font-nav ${
               activeTab === "experience" ? "bg-purple-300" : ""

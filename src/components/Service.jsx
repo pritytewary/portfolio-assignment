@@ -10,7 +10,7 @@ const ServiceSection = ({ services }) => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black ">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-red-300 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-12"
+          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-12"
           initial={{ y: -20 }}
           animate={{ y: [0, -10, 0] }}
           transition={{
@@ -25,7 +25,7 @@ const ServiceSection = ({ services }) => {
           {services.map((service) => (
             <motion.div
               key={service._id}
-              className="bg-black text-white rounded-lg overflow-hidden shadow-lg"
+              className="bg-gradient-to-r from-black to-gray-800 text-white rounded-lg overflow-hidden shadow-lg"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

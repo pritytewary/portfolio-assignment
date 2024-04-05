@@ -10,11 +10,11 @@ const AboutSection = ({ user }) => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <div className="max-w-7xl mx-auto ">
+      <div className=" mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
             <motion.div
-              className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-red-300 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee"
+              className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee"
               initial={{ y: -20 }}
               animate={{ y: [0, -10, 0] }}
               transition={{
