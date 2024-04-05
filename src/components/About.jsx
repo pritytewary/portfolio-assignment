@@ -13,20 +13,21 @@ const AboutSection = ({ user }) => {
       <div className="max-w-7xl mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="flex flex-col justify-center">
-            <div className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-about ">
+            <motion.div
+              className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-red-300 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee"
+              initial={{ y: -20 }}
+              animate={{ y: [0, -10, 0] }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+            >
               About Me
-            </div>
+            </motion.div>
 
             <motion.p
-              className="text-lg mb-4"
-              initial={{ x: -50, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.7 }}
-            >
-              {user.about.subtitle}
-            </motion.p>
-            <motion.p
-              className="text-lg mb-4"
+              className="text-2xl mb-4 font-vibur mt-4"
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.9 }}
@@ -34,7 +35,7 @@ const AboutSection = ({ user }) => {
               {user.about.description}
             </motion.p>
             <motion.div
-              className="flex items-center mb-4"
+              className="flex items-center mb-4 font-sansita"
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.1 }}
@@ -49,7 +50,7 @@ const AboutSection = ({ user }) => {
               transition={{ duration: 1, delay: 1.3 }}
             >
               <FiMail className="mr-2" />
-              <p className="text-lg">{user.about.contactEmail}</p>
+              <p className="text-lg font-sansita">{user.about.contactEmail}</p>
             </motion.div>
             <motion.div
               className="flex items-center mb-4"
@@ -58,7 +59,7 @@ const AboutSection = ({ user }) => {
               transition={{ duration: 1, delay: 1.5 }}
             >
               <FiMapPin className="mr-2" />
-              <p className="text-lg">{user.about.address}</p>
+              <p className="text-lg font-sansita">{user.about.address}</p>
             </motion.div>
           </div>
           <motion.div

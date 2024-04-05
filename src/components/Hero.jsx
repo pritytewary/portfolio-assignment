@@ -21,7 +21,7 @@ const Hero = ({ user }) => {
               {user.about.name}
             </motion.h1>
             <motion.h2
-              className="text-2xl sm:text-3xl  font-bold mb-4 font-abc"
+              className="text-7xl sm:text-3xl  font-extrabold mb-4 font-abc bg-gradient-to-r from-blue-400 via-yellow-400 to to-blue-700 text-transparent bg-clip-text inline-block"
               initial={{ x: -50, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}

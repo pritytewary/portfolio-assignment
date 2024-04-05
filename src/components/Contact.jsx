@@ -59,10 +59,12 @@ const ContactForm = ({ contactDetails, user }) => {
       ref={formRef}
       initial={{ opacity: 0, y: 50 }}
       animate={animationControls}
-      className="flex justify-around items-center bg-gradient-to-r flex-col from-black to-gray-800 text-white  sm:px-6 lg:px-8 h-screen pt-10"
+      className="flex justify-around items-center flex-col bg-gradient-to-r from-black via-gray-900 to-black text-white  sm:px-6 lg:px-8 h-screen pt-10"
     >
-      <motion.h2 className="text-5xl font-bold">Get In Touch</motion.h2>
-      <div className="flex items-center justify-between gap-8">
+      <motion.h2 className=" sm:text-3xl  font-extrabold mb-4 font-abc bg-gradient-to-r from-blue-400 via-yellow-400 to to-blue-700 text-transparent bg-clip-text  inline-block">
+        Get In Touch
+      </motion.h2>
+      <div className="flex items-center justify-between gap-8 font-sansita">
         <motion.p className="flex items-center gap-3 text-xl">
           <span className="font-semibold">
             {" "}
@@ -85,7 +87,7 @@ const ContactForm = ({ contactDetails, user }) => {
         </motion.p>
       </div>
 
-      <form onSubmit={handleSubmit} className="max-w-lg w-full">
+      <form onSubmit={handleSubmit} className="max-w-lg w-full font-nav">
         <motion.div className="mb-4">
           <label htmlFor="name" className="block text-sm font-bold mb-2">
             Name

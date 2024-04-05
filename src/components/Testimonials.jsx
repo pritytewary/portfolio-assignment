@@ -15,7 +15,7 @@ const TestimonialsSection = ({ testimonials }) => {
   }, [testimonials]);
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black to-gray-800 pt-28 pb-32 ">
+    <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black pt-28 pb-32 ">
       <div className="max-w-4xl mx-auto">
         <h1 className="sm:text-4xl text-5xl font-bold text-white pb-8 text-center"></h1>
         <div className="relative">
@@ -34,10 +34,10 @@ const TestimonialsSection = ({ testimonials }) => {
                   alt={testimonials?.[index]?.name}
                   className="rounded-full w-20 h-20 mx-auto mb-4"
                 />
-                <p className="text-white text-lg mb-6">
+                <p className="text-white text-2xl mb-6 font-vibur">
                   "{testimonials?.[index]?.review}"
                 </p>
-                <p className="text-gray-300 text-sm">
+                <p className="text-gray-300 text-sm  font-sansita">
                   - {testimonials?.[index]?.name},{" "}
                   {testimonials?.[index]?.position}
                 </p>
