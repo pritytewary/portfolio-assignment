@@ -15,9 +15,9 @@ const TestimonialsSection = ({ testimonials }) => {
   }, [testimonials]);
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black pt-28 pb-32 ">
-      <div className="max-w-4xl mx-auto">
-        <h1 className="sm:text-4xl text-5xl font-bold text-white pb-8 text-center"></h1>
+    <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black pt-20 sm:pt-24 h-[400px] ">
+      <div className="max-w-4xl mx-auto ">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white  sm:pb-8 text-center"></h1>
         <div className="relative">
           <AnimatePresence initial={false}>
             <motion.div
@@ -28,16 +28,16 @@ const TestimonialsSection = ({ testimonials }) => {
               exit={{ opacity: 0, scale: 0.8 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="bg-gray-900 bg-opacity-90 rounded-lg p-8 text-center shadow-xl shadow-purple-200">
+              <div className="bg-gray-900 bg-opacity-90 rounded-lg p-6 sm:p-8 text-center shadow-xl shadow-purple-200">
                 <img
                   src={testimonials?.[index]?.image.url}
                   alt={testimonials?.[index]?.name}
-                  className="rounded-full w-20 h-20 mx-auto mb-4"
+                  className="rounded-full w-16 sm:w-20 h-16 sm:h-20 mx-auto mb-4"
                 />
-                <p className="text-white text-2xl mb-6 font-vibur">
+                <p className="text-white text-lg sm:text-xl mb-6 font-vibur">
                   "{testimonials?.[index]?.review}"
                 </p>
-                <p className="text-gray-300 text-sm  font-sansita">
+                <p className="text-gray-300 text-base sm:text-sm font-sansita">
                   - {testimonials?.[index]?.name},{" "}
                   {testimonials?.[index]?.position}
                 </p>

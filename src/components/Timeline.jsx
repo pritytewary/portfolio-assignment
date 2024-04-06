@@ -29,7 +29,7 @@ const TimelineSection = ({ timeline }) => {
     <section className="py-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-black via-gray-900 to-black">
       <div className="max-w-7xl mx-auto">
         <motion.div
-          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-12"
+          className="bg-gradient-to-tr from-purple-300 via-purple-600 to-blue-500 text-gray-800 text-4xl sm:text-6xl items-center flex justify-center py-0.5 px-6 font-bungee mb-8 sm:mb-12"
           initial={{ y: -20 }}
           animate={{ y: [0, -10, 0] }}
           transition={{
@@ -41,9 +41,9 @@ const TimelineSection = ({ timeline }) => {
           Resume
         </motion.div>
 
-        <div className="flex justify-center mb-4">
+        <div className="flex flex-col sm:flex-row justify-center mb-4">
           <button
-            className={`mr-4 text-5xl font-semibold text-white border border-white px-40 py-2 font-nav ${
+            className={`mb-2 sm:mb-0 mr-0 sm:mr-4 text-3xl sm:text-5xl font-semibold text-white border border-white px-6 sm:px-16 py-2 font-nav ${
               activeTab === "experience" ? "bg-purple-300" : ""
             }`}
             onClick={() => handleTabChange("experience")}
@@ -51,7 +51,7 @@ const TimelineSection = ({ timeline }) => {
             Experience
           </button>
           <button
-            className={`text-5xl font-semibold text-white border border-white px-40 py-2 font-nav ${
+            className={`text-3xl sm:text-5xl font-semibold text-white border border-white px-6 sm:px-16 py-2 font-nav ${
               activeTab === "education" ? "bg-purple-300" : ""
             }`}
             onClick={() => handleTabChange("education")}
@@ -63,7 +63,7 @@ const TimelineSection = ({ timeline }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 text-white">
           {activeTab === "education" && (
             <div>
-              <h2 className="text-4xl font-bold text-white mb-6">Education</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6"></h2>
               {education.map((item, index) => (
                 <motion.div
                   key={item._id}
@@ -72,15 +72,19 @@ const TimelineSection = ({ timeline }) => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <h3 className="text-2xl font-semibold text-white mb-2 font-logo">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 font-logo">
                     {item.company_name}
                   </h3>
-                  <p className="text-lg  mb-2 font-sansita">{item.jobTitle}</p>
-                  <p className="text-lg  mb-2 font-sansita">
+                  <p className="text-lg sm:text-xl mb-2 font-sansita">
+                    {item.jobTitle}
+                  </p>
+                  <p className="text-lg sm:text-xl mb-2 font-sansita">
                     {formatDate(item.startDate)} - {formatDate(item.endDate)}
                   </p>
-                  <p className="text-lg  mb-4 font-sansita">{item.summary}</p>
-                  <ul className="list-disc list-inside text-lg  font-vibur">
+                  <p className="text-lg sm:text-xl mb-4 font-sansita">
+                    {item.summary}
+                  </p>
+                  <ul className="list-disc list-inside text-lg sm:text-xl font-vibur">
                     {item.bulletPoints.map((point, index) => (
                       <li key={index}>{point}</li>
                     ))}
@@ -92,30 +96,28 @@ const TimelineSection = ({ timeline }) => {
 
           {activeTab === "experience" && (
             <div>
-              <h2 className="text-4xl font-bold text-white mb-6 font-about">
-                Experience
-              </h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6 font-about"></h2>
               {experience.map((item, index) => (
                 <motion.div
                   key={item._id}
-                  className="mb-8 bg-gradient-to-t from-orange-200 via-lime-400 to-teal-500 rounded-lg p-6 "
+                  className="mb-8 bg-gradient-to-t from-orange-200 via-lime-400 to-teal-500 rounded-lg p-6"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
-                  <h3 className="text-2xl font-semibold text-white mb-2 font-logo">
+                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 font-logo">
                     {item.company_name}
                   </h3>
-                  <p className="text-lg text-white mb-2 font-sansita">
+                  <p className="text-lg sm:text-xl mb-2 font-sansita">
                     {item.jobTitle}
                   </p>
-                  <p className="text-lg text-white mb-2 font-sansita">
+                  <p className="text-lg sm:text-xl mb-2 font-sansita">
                     {formatDate(item.startDate)} - {formatDate(item.endDate)}
                   </p>
-                  <p className="text-lg text-white mb-4 font-sansita">
+                  <p className="text-lg sm:text-xl mb-4 font-sansita">
                     {item.summary}
                   </p>
-                  <ul className="list-disc list-inside text-lg text-white font-vibur">
+                  <ul className="list-disc list-inside text-lg sm:text-xl font-vibur">
                     {item.bulletPoints.map((point, index) => (
                       <li key={index}>{point}</li>
                     ))}
